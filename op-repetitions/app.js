@@ -140,3 +140,50 @@ readLine.question('Favor informar um número: ', (numero1) =>{
         })
     }
 })
+
+
+/*
+Estruturas de repetição
+//for 
+cria uma variável para controlar o loop, verifica a condição dela e a incrementa a cada loop,
+as instruções dentro do escopo são executadas a cada novo loop
+útil para quando sabemos previamente a quantidade de vezes que precisamos iterar
+Ex:
+for (let pneusTrocados = 0; pneusTrocados < 4; pneusTrocados++){
+    trocarPneu();
+}
+
+//while
+verifica a condição e se for verdadeira a condição as instruções dentro do escopo são executadas
+a cada novo loop
+útil para quando a condição de parada não depende de um número
+Ex:
+let temCarroNaFila = true;
+while (temCarroNaFila){
+    lavarCarro();
+    temCarroNaFila = verificarTemCarroNaFila();
+}
+
+//do while
+as instruções no escopo são executadas uma vez e depois verifica a condição
+caso seja verdadeira continua executando o loop até que ela não seja mais atendida
+útil quando precisamos executar algo no mínimo uma vez para saber a condição de parada
+Ex:
+let atividadesPendentes;
+do {
+    atividadesPendentes = consultarAgendaDeHoje();
+    informarAtividades(atividadesPendentes);
+    await umaHora();
+} while (atividadesPendentes.length > 0);
+
+//for... of
+forma mais segura para o programador de repetição, ele percorre uma lista/array 
+e extrai uma variável contendo um dos itens da lista em cada loop até que não
+haja mais nenhum item a ser utilizado
+Ex:
+const novosAlunos = ["João", "Felipe", "Alfredo"];
+for (const aluno of novosAlunos) {
+    darBoasVindas(aluno);
+}
+
+*/
